@@ -1,0 +1,129 @@
+body {
+    background-image: linear-gradient(to top, #daf1ff, #85d6ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    height: 150vh;
+    overflow-x: hidden;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+    background-color: #f4f8ff;
+    /* Light blue header background */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.main-title svg {
+    padding-bottom: 15px;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-title h1 {
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.staff-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1400px;
+    /* Prevents the grid from stretching too wide on large screens */
+    margin: 0 auto;
+    /* Centers the entire grid container on the page */
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.block-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Replaced 500px to adapt to the grid column width */
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break the uniform width */
+    transition: all 0.3s ease;
+}
+
+.block-list:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.block-list h1 {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.block-list h2 {
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.block-list .image {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 500px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.block-list .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.block-list .image img:hover {
+    transform: scale(1.05);
+}
+
+.block-list button.contact {
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.block-list button.contact:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.05);
+}

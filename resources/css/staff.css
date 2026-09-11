@@ -1,0 +1,58 @@
+.staff-directory button{
+    /* Your existing styles */
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff, #eaf3ff);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #1e293b;
+
+    /* New styles for floating */
+    position: fixed;
+    top: 400px;
+    right: 0px;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+.staff-directory button:hover {
+    font-size: 20px;
+    padding-right: 50px;
+    outline: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.staff-directory button a {
+    text-decoration: none;
+    color: black;
+}
+
+.apply-agent button{
+    /* Your existing styles */
+    border: none;
+    background-image: linear-gradient(to left, rgb(255, 247, 201), gold);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: lighter;
+    border: rgb(255, 240, 154) 3px solid;
+    border-radius: 5px;
+    box-shadow: 0 0px 20px rgba(255, 240, 154, 0.7);
+
+    /* New styles for floating */
+    position: fixed;
+    top: 340px;
+    right: 0px;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+.apply-agent button:hover {
+    font-size: 20px;
+    padding-right: 50px;
+    outline: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.apply-agent button a {
+    text-decoration: none;
+    color: black;
+}

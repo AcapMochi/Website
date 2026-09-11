@@ -1,0 +1,138 @@
+.menu {
+    padding: 25px;
+    width: 370px;
+    height: 100vh;
+    background-image: linear-gradient(to left, #ffffff, #eaf3ff);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-200%);
+
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    z-index: 1001;
+}
+
+.menu .menu-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .menu-top-container button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 100%;
+    border-color: #1e293b;
+    border-width: 3px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: transparent;
+
+    transition: all .3s ease;
+}
+
+.menu .menu-top-container button:hover {
+    border-color: #38b6ff;
+    background-color: #1e293b;
+    color: white;
+
+    font-size: 20px;
+    padding: 11px 16px;
+}
+
+.menu .menu-container {
+    padding-top: 50px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+.menu .menu-container a {
+    font-weight: lighter;
+    text-decoration: none;
+    color: #1e293b;
+    transition: all .3s ease;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.menu .menu-container a:hover {
+    background-color: #38b6ff;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.menu-block {
+    margin-bottom: 35px;
+}
+
+.menu-block h2 {
+    margin-bottom: 15px;
+    color:#1e293b;
+}
+
+.menu-block h4 {
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.menu .menu-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.menu .menu-footer h6 {
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.menu .menu-footer h6 a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-brands {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.my-logo {
+    width: 200px;
+    height: auto;
+    color: #1e293b;
+    transition: color 0.3s ease;
+}
+
+.my-logo:hover {
+    color: #38b6ff;
+}
+
+.open-menu-button button {
+
+    /* Your existing styles */
+    border: none;
+    background-image: linear-gradient(to bottom, #ffffff, #eaf3ff);
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #1e293b;
+
+    /* New styles for floating */
+    position: fixed;
+    top: 60px;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+
+.open-menu-button button:hover {
+    font-size: 20px;
+    padding-left: 50px;
+    outline: 4px solid rgba(0, 0, 0, 0.5);
+}

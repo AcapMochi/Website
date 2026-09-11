@@ -1,0 +1,184 @@
+body {
+    background-image: linear-gradient(to top, #daf1ff, #85d6ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    height: 150vh;
+    overflow-x: hidden;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: #f4f8ff;
+    /* Light blue header background */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.main-title svg {
+    padding-bottom: 15px;
+}
+
+main.main-apply {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    /* Move the background color to the parent container so it flows seamlessly behind the faded image */
+    background-image: linear-gradient(to right, #daf1ff, #85d6ff);
+}
+
+.main-apply .main-apply-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 40vw;
+    height: 100%;
+
+    margin-left: 50px;
+    padding-right: 100px;
+}
+
+.main-apply img {
+    width: 60vw;
+    /* Fill the remaining width beside the 40vw title */
+    height: 100%;
+    object-fit: cover;
+    /* Prevents image stretching */
+
+    /* Smooth gradient: Fades from fully transparent on the left (0%) to fully visible (black) at 30% */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+}
+
+.main-apply-title h5 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: none;
+    margin-bottom: 4px;
+}
+
+.main-apply-title h1 {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.main-apply-title h3 {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.main-apply-title h4 {
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+}
+
+.main-apply-title button.apply-button {
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 35px;
+    border: 6px solid white;
+    background-image: linear-gradient(to top, #001a58, rgb(0, 126, 189));
+    color: white;
+    box-shadow: 0 0px 30px #01a6ff;
+}
+
+.about {
+    background-image: linear-gradient(to top, #daf1ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+}
+
+.about .about-left {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    margin-right: 100px;
+}
+
+.about-left h5 {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    letter-spacing: 1px;
+    pointer-events: none;
+    margin-bottom: 4px;
+}
+
+.about-left h1 {
+    font-size: 50px;
+    padding-right: 25%;
+}
+
+.about-left h4 {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-right: 25%;
+    padding-top: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-container .about-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: first baseline;
+}
+
+.about-container .about-block h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.about-container .about-block h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    padding-top: 20px;
+}
+
+.about .about-right {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    background-color: black;
+}
+
+.benefits {
+    background-image: linear-gradient(to top, #daf1ff, #85d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+}

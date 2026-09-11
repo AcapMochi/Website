@@ -1,0 +1,402 @@
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/resources/images/House.webp");
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+.first h1 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+.first button {
+    border-radius: 10px;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+
+    position: absolute;
+    bottom: 200px;
+
+    transition: all .3s ease;
+}
+
+.first button a {
+    text-decoration: none;
+    color: black;
+}
+
+.first button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+    outline: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.second {
+    background-image: linear-gradient(to left, #daf1ff, #85d6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50vh;
+}
+
+.second .block-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* Anchors the entire block's content to the left */
+    border-radius: 10px;
+    width: 40vw;
+    height: 40vh;
+    padding-left: 5%;
+    /* Gives a little breathing room from the edge of the screen */
+}
+
+.second h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: 70px;
+    margin: 0 0 15px 0;
+    /* Removes default margins and adds space below */
+    border-bottom: 2px solid white;
+    /* A much simpler way to add the white line */
+    padding-bottom: 10px;
+    /* Spaces the text from the underline */
+}
+
+.second h3 {
+    color: white;
+    font-weight: lighter;
+    margin: 0;
+    text-align: left;
+    /* Ensures the paragraph text reads left-to-right smoothly */
+    line-height: 1.6;
+    /* Adds clean spacing between the lines of text */
+}
+
+.second .block-two {
+    background-image: url(/resources/images/House.webp);
+    background-size: cover;
+    border-radius: 10px;
+    width: 40vw;
+    height: 40vh;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 1);
+
+    transition: all .3s ease;
+}
+
+.second .block-two:hover {
+    outline: 4px solid rgba(0, 0, 0, 0.5);
+
+    width: 41vw;
+    height: 41vh;
+}
+
+.states {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+
+    padding-top: 100px;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    /* Reduced from 20% to prevent squishing on smaller monitors */
+    justify-content: center;
+    align-items: center;
+    /* Vertically centers the left and right blocks */
+    background-image: linear-gradient(to top, #daf1ff, #ffffff);
+    width: 100%;
+    /* Changed from 100vw to prevent horizontal scrollbars */
+    min-height: 100vh;
+    /* Allows section to grow if text gets too long */
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.left-block {
+    width: 70vw;
+    height: 60vh;
+    /* Reduced slightly so the image breathes within the viewport */
+    background-image: url(/resources/images/Staffs/GroupPhoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* Centers the image inside the div */
+    background-repeat: no-repeat;
+    border:#005b9f 4px solid;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.right-block {
+    width: 40vw;
+    /* Slightly increased to give the text more room */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Pushes all the text to the vertical center */
+    text-align: left;
+    /* Left-aligns text to pair cleanly with the h3 border */
+}
+
+.right-block h1 {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.right-block h2 {
+    font-weight: lighter;
+    color: #00a2ff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.right-block h3 {
+    font-weight: lighter;
+    font-style: italic;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: #00a2ff;
+    padding-left: 20px;
+    line-height: 1.6;
+    /* Adds breathing room between lines */
+    margin-bottom: 30px;
+}
+
+.right-block h4 {
+    font-weight: lighter;
+    line-height: 1.7;
+    /* Adds breathing room between lines */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: justify;
+    /* Gives the paragraphs clean, uniform edges */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .third {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .left-block,
+    .right-block {
+        width: 100%;
+    }
+
+    .left-block {
+        height: 50vh;
+    }
+}
+
+/* --- Main Section Layout --- */
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* Better than fixed height to prevent overflow on small screens */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #daf1ff, #85d6ff);
+    gap: 30px;
+    /* Adds space between the title and the cards */
+}
+
+/* --- Title Styling --- */
+.fourth .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fourth .title h1 {
+    color: #ffffff;
+    font-size: 70px;
+    margin: 0;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.fourth .title h2 {
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* --- Card Containers (Top & Bottom) --- */
+.fourth .top,
+.fourth .bottom {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Slightly less transparent for better reading */
+    width: 100%;
+    max-width: 800px;
+    /* Keeps the cards from getting too wide on desktop */
+    padding: 40px;
+    /* Internal spacing */
+    border-radius: 12px;
+    /* Smooth rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
+    text-align: center;
+}
+
+/* --- Card Headings --- */
+.fourth .top h2,
+.fourth .bottom h2 {
+    color: #005b9f;
+    /* A matching blue tone for contrast */
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+}
+
+.fourth .top h4,
+.fourth .bottom h4 {
+    color: #666;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Card Paragraphs --- */
+.fourth .top p,
+.fourth .bottom p {
+    color: #333;
+    line-height: 1.6;
+    /* Makes text easier to read */
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* --- Specific List Styling for Misi --- */
+.fourth .bottom ul {
+    text-align: left;
+    /* Aligns the bullet points to the left */
+    margin: 0;
+    padding-left: 20px;
+}
+
+.fourth .bottom ul li {
+    margin-bottom: 15px;
+    /* Space between bullet points */
+}
+
+.fourth .bottom ul li:last-child {
+    margin-bottom: 0;
+}
+
+.fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* Better than fixed height to prevent overflow on small screens */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #daf1ff, #ffffff);
+    gap: 30px;
+    /* Adds space between the title and the cards */
+}
+
+.fifth .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fifth .title h1 {
+    color: #2c3e50;
+    font-size: 70px;
+    margin: 0;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #2c3e50;
+}
+
+.fifth .title h2 {
+    font-weight: lighter;
+    color: #666;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.fifth .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100vw;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.fifth .gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 350px;
+    border: 10px solid #2c3e50;
+}
+
+.fifth .gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.fifth button.gallery-button {
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+
+    margin-top: 10px;
+
+    transition: all .3s ease;
+}
+
+.fifth button.gallery-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+}
+
+.fifth button.gallery-button a {
+    text-decoration: none;
+    color: black;
+}

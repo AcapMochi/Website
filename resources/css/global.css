@@ -1,0 +1,162 @@
+/* 1. CSS Reset: Strips default margins and includes padding in width/height */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #daf1ff, #85d6ff);
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    height: 200vh;
+
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2c3e50;
+}
+
+/* --- FOOTER BASE STYLES --- */
+footer {
+    background-color: #383838;
+    /* Dark grey background */
+    color: #a0a0a0;
+    /* Light grey text */
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 50px 10%;
+    box-sizing: border-box;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.footer-col p {
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* --- MIDDLE COLUMN: SOCIAL LINKS --- */
+.social-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icon-wrap {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+/* Icon Background Colors */
+.facebook-bg {
+    background-color: #3b5998;
+}
+
+.instagram-bg {
+    background-color: #e1306c;
+}
+
+.tiktok-bg {
+    background-color: #000000;
+}
+
+/* --- RIGHT COLUMN: CONTACT INFO --- */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    /* Aligns icon with the top line of text */
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-item i {
+    color: #ffffff;
+    font-size: 20px;
+    width: 30px;
+    /* Fixed width ensures text lines up neatly */
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+/* --- BOTTOM BAR --- */
+.footer-bottom {
+    background-color: #2b2b2b;
+    /* Slightly darker background */
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.copyright strong {
+    color: #ffffff;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: #a0a0a0;
+    text-decoration: none;
+    padding-left: 15px;
+    border-left: 1px solid #555555;
+}
+
+.footer-nav a:first-child {
+    border-left: none;
+    /* Removes the border from the first link */
+    padding-left: 0;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

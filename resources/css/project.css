@@ -1,0 +1,307 @@
+body {
+    background-image: linear-gradient(to top, #ffffff, #35bcff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    height: 120vh;
+    overflow-x: hidden;
+}
+
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+    background-color: #f4f8ff;
+    /* Light blue header background */
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.main-title svg {
+    padding-bottom: 15px;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-title h1 {
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.list {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.project-list {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 25px;
+}
+
+.block-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid rgba(188, 221, 255, 0.9);
+    box-shadow: 0 0px 20px rgba(188, 221, 255, 0.5);
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    transition: all .3s ease;
+}
+
+.block-list:hover {
+    transform: scale(1.02);
+}
+
+.project-image {
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    border-radius: 5px;
+
+    border: 3px solid rgba(188, 221, 255, 0.9);
+    box-shadow: 0 0px 20px rgba(188, 221, 255, 0.5);
+}
+
+.project-header {
+    width: 100%;
+    height: 40%;
+}
+
+.status {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.status span {
+    border-radius: 50px;
+    background-color: #2993c7;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+
+    color: #2c3e50;
+}
+
+.project-name span {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.location span {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.units span {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+button.view-button {
+    border-radius: 100px;
+    margin-left: 200px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    background-color: #2c3e50;
+    border: 3px solid #2c3e50;
+    transition: all .3s ease;
+}
+
+button.view-button a {
+    text-decoration: none;
+    color: white;
+
+    transition: all .3s ease;
+}
+
+button.view-button a:hover {
+    text-decoration: none;
+    color: #2c3e50;
+
+    transition: all .3s ease;
+}
+
+button.view-button:hover {
+
+    border: 3px solid #2c3e50;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-size: 15px;
+}
+
+.project-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px auto;
+    gap: 12px;
+    max-width: 1350px;
+    border: 3px solid rgba(188, 221, 255, 0.9);
+    box-shadow: 0 0px 20px rgba(188, 221, 255, 0.5);
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c9d3e0;
+    border-radius: 6px;
+    height: 42px;
+    background-color: white;
+}
+
+.search-group {
+    flex-grow: 1;
+    padding: 0 12px;
+    gap: 8px;
+}
+
+#search {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    color: #4a5568;
+    background: transparent;
+}
+
+#search::placeholder {
+    color: #8b98a9;
+}
+
+/* Specific styling for the dropdowns */
+.select-group {
+    padding: 0 12px;
+    min-width: 160px;
+}
+
+.select-group select {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+/* Specific styling for the radio buttons */
+.radio-group {
+    padding: 0 15px;
+    gap: 15px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+}
+
+/* Makes the radio button blue like in the screenshot */
+.radio-label input[type="radio"] {
+    accent-color: #1a73e8;
+    /* Change to match your exact theme blue */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.find-your-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 50vh;
+
+    background-image: linear-gradient(to bottom, #daf1ff, #85d6ff);
+    /* background-image: url(/resources/images/listing4.jpg);
+    background-size: cover; */
+}
+
+.find-your-home h1 {
+    text-align: center;
+    font-size: 80px;
+    border-bottom: #35bcff 5px solid;
+    margin-bottom: 50px;
+}
+
+.find-your-home h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 80px;
+}
+
+.contact-agent {
+    border-style: none;
+    width: 25%;
+    height: 15%;
+    border-radius: 100px;
+    border: #2c3e50 3px solid;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+
+    transition: all .3s ease;
+}
+
+.contact-agent:hover {
+    transform: scale(1.03);
+    background-color: #2c3e50;
+    color: white;
+}

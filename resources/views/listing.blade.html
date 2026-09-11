@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/resources/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/listings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+
+    <script>
+        function closeMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.transform = "translateX(-100%)";
+        }
+
+        function openMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.transform = "translateX(0%)";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="open-menu-button" id="open-menu-button">
+        <button onclick="openMenu()"><svg width="20" height="13" viewBox="0 0 283 291" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="50" height="291" fill="#1e293b" />
+                <rect x="110" width="50" height="291" fill="#1e293b" />
+                <rect x="220" width="50" height="291" fill="#1e293b" />
+            </svg>
+            MENU</button>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menu-top-container">
+            <a href="#">
+                <svg width="230" height="70" viewBox="0 0 250 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.6325 52.9762H21.5425V58.6812H4.77746V57.7712L6.70246 57.5612C7.07579 57.5145 7.29746 57.4212 7.36746 57.2812C7.43746 57.1412 7.47246 56.6629 7.47246 55.8462V37.7162C7.47246 36.8995 7.43746 36.4212 7.36746 36.2812C7.29746 36.1412 7.07579 36.0479 6.70246 36.0012L4.77746 35.8262V34.8812H21.0875V40.5862H20.2125L19.1975 36.9112C19.1275 36.6312 19.0458 36.4329 18.9525 36.3162C18.8825 36.1762 18.7308 36.0945 18.4975 36.0712C18.2641 36.0245 17.8675 36.0012 17.3075 36.0012H10.5175V46.1162H15.2075C15.7675 46.1162 16.1641 46.1045 16.3975 46.0812C16.6308 46.0345 16.7825 45.9529 16.8525 45.8362C16.9458 45.6962 17.0275 45.4862 17.0975 45.2062L17.7625 42.5812H18.6725V50.7712H17.7625L17.0975 48.1462C17.0275 47.8662 16.9458 47.6679 16.8525 47.5512C16.7825 47.4112 16.6308 47.3295 16.3975 47.3062C16.1641 47.2595 15.7675 47.2362 15.2075 47.2362H10.5175V57.5612H17.7275C18.2875 57.5612 18.6841 57.5495 18.9175 57.5262C19.1508 57.4795 19.3025 57.3979 19.3725 57.2812C19.4658 57.1412 19.5475 56.9312 19.6175 56.6512L20.6325 52.9762ZM39.5352 52.9062H40.4802V58.6812H24.5552V57.7712L26.4802 57.5612C26.8535 57.5145 27.0752 57.4212 27.1452 57.2812C27.2152 57.1412 27.2502 56.6629 27.2502 55.8462V37.7162C27.2502 36.8995 27.2152 36.4212 27.1452 36.2812C27.0752 36.1412 26.8535 36.0479 26.4802 36.0012L24.5552 35.8262V34.8812H32.9902V35.8262L31.0652 36.0012C30.6919 36.0479 30.4702 36.1412 30.4002 36.2812C30.3302 36.4212 30.2952 36.8995 30.2952 37.7162V57.5612H36.6302C37.1902 57.5612 37.5869 57.5495 37.8202 57.5262C38.0535 57.4795 38.2052 57.3979 38.2752 57.2812C38.3685 57.1412 38.4502 56.9312 38.5202 56.6512L39.5352 52.9062ZM64.0929 57.7712V58.6812H55.6579V57.7712L57.5829 57.5612C57.9562 57.5145 58.1779 57.4212 58.2479 57.2812C58.3179 57.1412 58.3529 56.6629 58.3529 55.8462V47.2362H47.7829V55.8462C47.7829 56.6629 47.8179 57.1412 47.8879 57.2812C47.9579 57.4212 48.1796 57.5145 48.5529 57.5612L50.4779 57.7712V58.6812H42.0429V57.7712L43.9679 57.5612C44.3412 57.5145 44.5629 57.4212 44.6329 57.2812C44.7029 57.1412 44.7379 56.6629 44.7379 55.8462V37.7162C44.7379 36.8995 44.7029 36.4212 44.6329 36.2812C44.5629 36.1412 44.3412 36.0479 43.9679 36.0012L42.0429 35.8262V34.8812H50.4779V35.8262L48.5529 36.0012C48.1796 36.0479 47.9579 36.1412 47.8879 36.2812C47.8179 36.4212 47.7829 36.8995 47.7829 37.7162V46.1162H58.3529V37.7162C58.3529 36.8995 58.3179 36.4212 58.2479 36.2812C58.1779 36.1412 57.9562 36.0479 57.5829 36.0012L55.6579 35.8262V34.8812H64.0929V35.8262L62.1679 36.0012C61.7946 36.0479 61.5729 36.1412 61.5029 36.2812C61.4329 36.4212 61.3979 36.8995 61.3979 37.7162V55.8462C61.3979 56.6629 61.4329 57.1412 61.5029 57.2812C61.5729 57.4212 61.7946 57.5145 62.1679 57.5612L64.0929 57.7712ZM71.8134 57.7712V58.6812H65.1634V57.7712L67.0534 57.5612C67.3101 57.5379 67.4967 57.5029 67.6134 57.4562C67.7301 57.3862 67.8351 57.2462 67.9284 57.0362C68.0451 56.8029 68.1851 56.4062 68.3484 55.8462L75.1034 34.8812H77.3084L84.1334 55.8462C84.2967 56.4062 84.4251 56.8029 84.5184 57.0362C84.6351 57.2462 84.7517 57.3862 84.8684 57.4562C84.9851 57.5029 85.1601 57.5379 85.3934 57.5612L87.3184 57.7712V58.6812H78.8134V57.7712L80.7384 57.5612C81.1117 57.5145 81.3101 57.4212 81.3334 57.2812C81.3801 57.1179 81.2751 56.6395 81.0184 55.8462L79.5834 51.3662H71.0434L69.6084 55.8462C69.3517 56.6395 69.2351 57.1179 69.2584 57.2812C69.3051 57.4212 69.5151 57.5145 69.8884 57.5612L71.8134 57.7712ZM71.3934 50.2462H79.2334L75.3134 38.0662L71.3934 50.2462ZM115.071 57.7712V58.6812H106.636V57.7712L108.561 57.5612C108.934 57.5145 109.156 57.4212 109.226 57.2812C109.296 57.1179 109.331 56.6395 109.331 55.8462V36.8762L102.051 55.8812H99.6709L92.3559 36.8762V55.8462C92.3559 56.6395 92.3909 57.1179 92.4609 57.2812C92.5309 57.4212 92.7526 57.5145 93.1259 57.5612L95.0509 57.7712V58.6812H88.3659V57.7712L90.2909 57.5612C90.6643 57.5145 90.8859 57.4212 90.9559 57.2812C91.0259 57.1179 91.0609 56.6395 91.0609 55.8462V37.7162C91.0609 36.9229 91.0259 36.4562 90.9559 36.3162C90.8859 36.1529 90.6643 36.0479 90.2909 36.0012L88.3659 35.8262V34.8812H94.7709L101.806 53.2562L108.841 34.8812H115.071V35.8262L113.146 36.0012C112.773 36.0479 112.551 36.1529 112.481 36.3162C112.411 36.4562 112.376 36.9229 112.376 37.7162V55.8462C112.376 56.6395 112.411 57.1179 112.481 57.2812C112.551 57.4212 112.773 57.5145 113.146 57.5612L115.071 57.7712ZM152.063 57.7712V58.6812H143.628V57.7712L145.553 57.5612C145.926 57.5145 146.148 57.4212 146.218 57.2812C146.288 57.1179 146.323 56.6395 146.323 55.8462V36.8762L139.043 55.8812H136.663L129.348 36.8762V55.8462C129.348 56.6395 129.383 57.1179 129.453 57.2812C129.523 57.4212 129.745 57.5145 130.118 57.5612L132.043 57.7712V58.6812H125.358V57.7712L127.283 57.5612C127.656 57.5145 127.878 57.4212 127.948 57.2812C128.018 57.1179 128.053 56.6395 128.053 55.8462V37.7162C128.053 36.9229 128.018 36.4562 127.948 36.3162C127.878 36.1529 127.656 36.0479 127.283 36.0012L125.358 35.8262V34.8812H131.763L138.798 53.2562L145.833 34.8812H152.063V35.8262L150.138 36.0012C149.765 36.0479 149.543 36.1529 149.473 36.3162C149.403 36.4562 149.368 36.9229 149.368 37.7162V55.8462C149.368 56.6395 149.403 57.1179 149.473 57.2812C149.543 57.4212 149.765 57.5145 150.138 57.5612L152.063 57.7712ZM159.845 57.7712V58.6812H153.195V57.7712L155.085 57.5612C155.342 57.5379 155.529 57.5029 155.645 57.4562C155.762 57.3862 155.867 57.2462 155.96 57.0362C156.077 56.8029 156.217 56.4062 156.38 55.8462L163.135 34.8812H165.34L172.165 55.8462C172.329 56.4062 172.457 56.8029 172.55 57.0362C172.667 57.2462 172.784 57.3862 172.9 57.4562C173.017 57.5029 173.192 57.5379 173.425 57.5612L175.35 57.7712V58.6812H166.845V57.7712L168.77 57.5612C169.144 57.5145 169.342 57.4212 169.365 57.2812C169.412 57.1179 169.307 56.6395 169.05 55.8462L167.615 51.3662H159.075L157.64 55.8462C157.384 56.6395 157.267 57.1179 157.29 57.2812C157.337 57.4212 157.547 57.5145 157.92 57.5612L159.845 57.7712ZM159.425 50.2462H167.265L163.345 38.0662L159.425 50.2462ZM190.853 35.8262V34.8812H197.538V35.8262L195.613 36.0012C195.239 36.0479 195.018 36.1529 194.948 36.3162C194.878 36.4562 194.843 36.9229 194.843 37.7162V58.6812H193.128L180.388 37.1912V55.8462C180.388 56.6395 180.423 57.1179 180.493 57.2812C180.563 57.4212 180.784 57.5145 181.158 57.5612L183.083 57.7712V58.6812H176.398V57.7712L178.323 57.5612C178.696 57.5145 178.918 57.4212 178.988 57.2812C179.058 57.1179 179.093 56.6395 179.093 55.8462V37.7162C179.093 36.9229 179.058 36.4562 178.988 36.3162C178.918 36.1529 178.696 36.0479 178.323 36.0012L176.398 35.8262V34.8812H182.453L193.548 53.6412V37.7162C193.548 36.9229 193.513 36.4562 193.443 36.3162C193.373 36.1529 193.151 36.0479 192.778 36.0012L190.853 35.8262ZM207.842 57.9112C209.405 57.9112 210.665 57.5262 211.622 56.7562C212.602 55.9862 213.092 54.8545 213.092 53.3612C213.092 52.1712 212.73 51.1795 212.007 50.3862C211.284 49.5695 210.024 48.9162 208.227 48.4262L205.812 47.7262C204.039 47.2362 202.685 46.4079 201.752 45.2412C200.819 44.0745 200.352 42.6512 200.352 40.9712C200.352 39.8512 200.609 38.8012 201.122 37.8212C201.659 36.8412 202.464 36.0479 203.537 35.4412C204.634 34.8345 206.022 34.5312 207.702 34.5312C209.569 34.5312 211.074 34.8812 212.217 35.5812C213.36 36.2579 214.154 37.1445 214.597 38.2412C215.04 39.3379 215.145 40.5162 214.912 41.7762L211.972 42.4062C212.275 40.2362 212.054 38.5679 211.307 37.4012C210.584 36.2345 209.324 35.6512 207.527 35.6512C206.104 35.6512 204.984 36.0362 204.167 36.8062C203.35 37.5529 202.942 38.6495 202.942 40.0962C202.942 41.2395 203.269 42.2195 203.922 43.0362C204.575 43.8295 205.73 44.4595 207.387 44.9262L209.802 45.6262C213.699 46.6995 215.647 48.9745 215.647 52.4512C215.647 53.6879 215.355 54.8079 214.772 55.8112C214.212 56.7912 213.349 57.5729 212.182 58.1562C211.039 58.7395 209.592 59.0312 207.842 59.0312C206.629 59.0312 205.462 58.8445 204.342 58.4712C203.245 58.0979 202.3 57.4562 201.507 56.5462C200.737 55.6362 200.224 54.3762 199.967 52.7662L202.067 52.0662C202.184 53.6062 202.522 54.7962 203.082 55.6362C203.642 56.4762 204.342 57.0712 205.182 57.4212C206.022 57.7479 206.909 57.9112 207.842 57.9112ZM218.722 35.8262V34.8812H227.157V35.8262L225.232 36.0012C224.858 36.0479 224.637 36.1412 224.567 36.2812C224.497 36.4212 224.462 36.8995 224.462 37.7162V55.8462C224.462 56.6629 224.497 57.1412 224.567 57.2812C224.637 57.4212 224.858 57.5145 225.232 57.5612L227.157 57.7712V58.6812H218.722V57.7712L220.647 57.5612C221.02 57.5145 221.242 57.4212 221.312 57.2812C221.382 57.1412 221.417 56.6629 221.417 55.8462V37.7162C221.417 36.8995 221.382 36.4212 221.312 36.2812C221.242 36.1412 221.02 36.0479 220.647 36.0012L218.722 35.8262ZM244.584 52.9762H245.494V58.6812H229.674V57.9112L241.679 36.0012H233.944C233.127 36.0012 232.637 36.0595 232.474 36.1762C232.31 36.2695 232.17 36.5145 232.054 36.9112L231.039 40.5862H230.129V34.8812H245.144V35.6512L233.174 57.5612H241.679C242.239 57.5612 242.635 57.5495 242.869 57.5262C243.102 57.4795 243.254 57.3979 243.324 57.2812C243.417 57.1412 243.499 56.9312 243.569 56.6512L244.584 52.9762Z"
+                        fill="#1e293b" />
+                    <rect width="85.9873" height="0.775259" transform="matrix(1 0 0 -1 0.796179 31.237)"
+                        fill="#1e293b" />
+                    <rect width="246.815" height="0.775259" transform="matrix(1 0 0 -1 0.796179 70)" fill="#1e293b" />
+                    <rect width="51.9582" height="1.19955"
+                        transform="matrix(0.929211 -0.369551 -0.386806 -0.922161 76.8971 20.3074)" fill="#1e293b" />
+                    <rect width="51.9521" height="1.19955"
+                        transform="matrix(0.929191 0.369601 0.386858 -0.922139 124.243 1.10734)" fill="#1e293b" />
+                    <rect width="85.9873" height="0.775259" transform="matrix(1 0 0 -1 161.624 30.4618)"
+                        fill="#1e293b" />
+                    <rect x="113.854" y="10.305" width="9.55414" height="9.30311" fill="#1e293b" />
+                    <rect x="113.854" y="23.4845" width="9.55414" height="9.30311" fill="#1e293b" />
+                    <rect x="125.796" y="10.305" width="9.55414" height="9.30311" fill="#1e293b" />
+                    <rect x="125.796" y="23.4845" width="9.55414" height="9.30311" fill="#1e293b" />
+                </svg>
+            </a>
+            <button onclick="closeMenu()">X</button>
+        </div>
+
+        <div class="menu-container">
+            <section class="menu-block">
+                <h2>START WITH US</h2>
+                <h4><a href="/resources/views/index.blade.html">HOME</a></h4>
+                <h4><a href="/resources/views/states.blade.html">LISTINGS</a></h4>
+                <h4><a href="/resources/views/gallery.blade.html">GALLERY</a></h4>
+            </section>
+
+            <section class="menu-block">
+                <h2>OUR STORY</h2>
+                <h4><a href="#">ABOUT US</a></h4>
+                <h4><a href="#">HEAR FROM OUR LEADERS</a></h4>
+                <h4><a href="#">ELHAM MANSIZ</a></h4>
+            </section>
+
+            <section class="menu-block">
+                <h2>CONNECT WITH US</h2>
+                <h4><a href="#">OFFICE LOCATIONS</a></h4>
+                <h4><a href="#">CORPORATE PROFILE</a></h4>
+                <h4><a href="/resources/views/staff-directory.blade.html">STAFF DIRECTORY</a></h4>
+            </section>
+        </div>
+
+        <div class="menu-footer">
+            <h6>
+                <a href="#">
+                    elhammansiz28848@gmail.com
+                </a>
+                <a href="https://www.facebook.com/zamzilaahmadd">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </h6>
+        </div>
+    </div>
+
+    <div class="main-title">
+        NEGERI SEMBILAN
+    </div>
+
+    <div class="listings">
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-block">
+
+            <div class="image-container">
+                <div class="status-tag">OPEN FOR SALE</div>
+                <div class="rebate">REBATE<br>RM80K</div>
+                <div class="plot-size">20X65</div>
+                <img src="/resources/images/listing1.jpg" alt="Listing 1">
+            </div>
+
+            <div class="card-info">
+                <div class="card-title">PORT DICKSON, TAMAN PENAGA</div>
+                <div class="price-sec">
+                    <div class="price-label">HARGA BERMULA</div>
+                    <div class="price-value">RM328,500</div>
+                </div>
+
+                <div class="detail-button">
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="sales-button">
+                    <button>WHATSAPP SALES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
